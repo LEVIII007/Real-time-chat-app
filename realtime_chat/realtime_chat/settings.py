@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+LOGOUT_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'channels',
     'core',
+    'chatroom',
+    # 'social_django',
 ]
 
 MIDDLEWARE = [
@@ -118,6 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '<Your Google Client ID>'
+# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '<Your Google Client Secret>'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
